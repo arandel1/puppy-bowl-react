@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import AllPlayers from "./AllPlayers";
 import SinglePlayer from "./SinglePlayer";
 
+
 export default function NavBar() {
   // TO DO better - not generating new random numbers after we click
 

@@ -4,7 +4,6 @@ import NavBar from './components/NavBar'
 import SinglePlayer from './components/SinglePlayer'
 import { Routes, Route } from 'react-router-dom'
 
-
 function App() {
 
   return (

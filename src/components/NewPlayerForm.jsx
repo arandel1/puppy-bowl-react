@@ -10,9 +10,9 @@ export default function NewPlayerForm() {
 
   const { data, isLoading, refetch }= useGetPlayersQuery();
 
-function handleSubmit(e) {
+async function handleSubmit(e) {
   e.preventDefault();
-  createPlayer({ name, breed, imageUrl });
+  await createPlayer({ name, breed, imageUrl });
   refetch();
 }
 

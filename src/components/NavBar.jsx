@@ -9,10 +9,11 @@ export default function NavBar() {
   const id = Math.floor(Math.random() * 5 + 1 );
   return(
     <>
-      <h2>Nav Bar Component</h2>
-      <Link to="/">All Players</Link>
-      <br/>
-      <Link to={`/players/${id}`}>Random Player</Link>
+      <div className="navbar">
+        <Link to="/">All Players</Link>
+        <br/>
+        <Link to={`/players/${id}`}>Random Player</Link>
+      </div>
     </>
   );
 }

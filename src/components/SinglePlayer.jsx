@@ -12,12 +12,13 @@ export default function SinglePlayer() {
   
   return(
     <>
-      <h2>Single Player Component</h2>
       {isLoading ? <p>Loading...</p> : 
-        <div>
-          <h3>{player.name}</h3>
-          <h4>{player.breed}</h4>
-          //TODO expand to show player details
+        <div className="player-card">
+          <h2>{player.name}</h2>
+            <img src = {player.imageUrl} alt = "player image" />
+            <p>Breed: {player.breed}</p>
+            <p>Status: {player.status}</p>
+            <p>Player ID: {player.id}</p>
         </div>} 
     </>
   );

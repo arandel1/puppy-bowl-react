@@ -8,8 +8,9 @@ function App() {
 
   return (
     <>
-      <h1>App</h1>
       <NavBar/>
+      <h1>Welcome to Puppy Bowl!</h1>
+      
       <Routes>
         {/* path: what is added to baseUrl, element: React componenet that is rendered */}
         <Route path= '/' element = {<AllPlayers />}></Route>

@@ -55,13 +55,11 @@ export default function AllPlayers() {
 
 return (
   <>
-    <h2>All Players Component</h2>
     <NewPlayerForm/>
-    <h3>Roster</h3>
       {!isLoading ? (
         data?.data?.players.map((player) => (
           <div key={player.id} className="player-card">
-            <h4>{player.name}</h4>
+            <h3>{player.name}</h3>
             <p>{player.breed}</p>
             <img src = {player.imageUrl} alt = "player image" />
             
